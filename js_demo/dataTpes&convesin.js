@@ -150,7 +150,7 @@ console.log("20" + 2);
 
 
 
-if(""){
+if(null){
     console.log("hello world line 154");
     
 }

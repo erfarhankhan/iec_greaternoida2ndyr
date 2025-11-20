@@ -6,24 +6,28 @@
 function functionName() {
     // code
 }
+function xyz(){
+    console.log("m tech ");
+    
+}
+// xyz();
 
 // ✔ Example
 function greet() {
     console.log("Hello raju!");
 }
-greet();
+// greet();
 
 // 2. Function with Parameters
 
 // (Values we pass inside the function)
 
 // ✔ Example
-function greet(name) {
-    console.log("Hello " + name);
+function greet(name){
+    console.log("name "+ name);
+    
 }
-
-greet("hf");
-greet("ravi");
+// greet("hf")
 // .///////////////////////////////////////////////////////
 
 // Function with Return Value
@@ -31,12 +35,12 @@ greet("ravi");
 // (Returns a value back)
 
 // ✔ Example
-function add(a, b) {
+function add (a, b) {
     return a + b;
 }
 
 let result = add(5, 10);
-console.log(result);
+// console.log(result);
 
 ////////////////////////////////////////////////////
 // 4. Function Expression
@@ -44,11 +48,11 @@ console.log(result);
 // Function stored in a variable.
 
 // ✔ Example
-let sum = function(a, b) {
+let sum = function (a, b) {
     return a + b;
 };
 
-console.log(sum(4, 6));
+// console.log(sum(4, 6));
 
 // ⭐ 5. Arrow Function (ES6)
 
@@ -57,13 +61,27 @@ console.log(sum(4, 6));
 // ✔ Example
 let multiply = (a, b) => a * b;
 
-console.log(multiply(3, 4));  // 12
+// console.log(multiply(3, 4));  // 12
 
 //  6. Anonymous Function
 
 // Function without a name.
 
 // ✔ Used inside setTimeout or event listeners:
-setTimeout(function() {
-    console.log("Anonymous Function Called");
-}, 1000);
+
+console.log("hello1");
+console.log("hello2");
+console.log("hello3");
+setTimeout(function(){
+    console.log("hello m from set time out ");
+    
+},6000);
+console.log("hello 79");
+console.log("hello 80 ");
+console.log("hello 81");
+
+
+
+
+
+

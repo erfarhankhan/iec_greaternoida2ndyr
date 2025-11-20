@@ -6,7 +6,10 @@
 // for (let i = 1; i <= 5; i++) {
 //     // console.log(i);
 // }
-
+// for(let i = 1 ; i<5;i++){
+//     console.log("i => "+ i);
+    
+// }
 
 //////////////////////////////
 // while (condition) {
@@ -54,16 +57,33 @@ let student = {
     name: "hf",
     age: 22,
     city: "delhi",
-    email:"hfkhan"
+    email:"hfkhan",
+    mbl:829936
 };
-
-for (let i in student) {
-    // console.log(key, ":", student[key]);
-    if(i == "email"){
-        console.log(i+" " + student[i]);
+for(let i in student){
+    if(){
+            console.log("i "+" : " + student[i]);
+    }
+   
+    
+}
+// for(let i in object){
+//     //code
+// }
+for(let i in student){
+    // console.log(i+" : "+student[i]);
+    if (i == "email" || i == "mbl") {
+        console.log(i+ " :"+ student[i]); 
+        
         
     }
+ 
 }
 
 
-console.log(":jgksg");
+
+
+
+
+
+

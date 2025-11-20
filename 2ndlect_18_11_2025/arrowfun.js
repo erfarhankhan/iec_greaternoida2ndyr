@@ -31,15 +31,16 @@ const add = (a, b) => {
 // ❗ Important: Arrow functions do NOT have their own this
 
 // Example:
-
+let name = "hf ";
 const obj = {
     name: "Farhan",
-    show: () => {
-        console.log(this.name); // undefined
+    show: function (){
+        console.log("name " + name);
+        
     }
 };
 
-obj.show();
+// obj.show();
 
 
 // Arrow functions take this from parent scope → called lexical this.
@@ -59,7 +60,7 @@ function test() {
     console.log(x); // can access
 }
 
-test();
+// test();
 
 
 // Available everywhere.
@@ -74,8 +75,8 @@ function show() {
     console.log(y); // works
 }
 
-show();
-console.log(y); // ❌ Error: y is not defined
+// show();
+// console.log(y); // ❌ Error: y is not defined
 
 
 // Available only inside the function.
@@ -90,8 +91,8 @@ console.log(y); // ❌ Error: y is not defined
     const b = 10;
 }
 
-console.log(a); // ❌ Error
-console.log(b); // ❌ Error
+// console.log(a); // ❌ Error
+// console.log(b); // ❌ Error
 
 
 // let and const are block scoped,
@@ -114,7 +115,7 @@ function outer() {
     inner();
 }
 
-outer();
+// outer();
 
 
 // Inner functions can use parent variables.
@@ -125,7 +126,7 @@ outer();
 // JavaScript moves declarations to the top before execution.
 
 // ✔ Var hoisting example:
-console.log(a); // undefined
+// console.log(a); // undefined
 var a = 10;
 
 
@@ -137,10 +138,39 @@ greet();  // Works
 function greet() {
     console.log("Hello!");
 }
-
+// console.log(a);
+// let a = 9;
 
 // Function declarations are fully hoisted.
 
 // ❗ Let & const hoisting (Temporal Dead Zone)
 // console.log(x); // ❌ Error
 // let x = 5;
+
+
+
+
+let student ={
+    name:"hf ",
+    age:25,
+
+}
+
+
+let raj = "from 160";
+
+function outers(){
+    let raj  = " m from line 163 "
+    function innerfun_one(){
+        let raj = " from  165"
+        console.log("hi  from innerfun_One "+ raj);
+        
+    }
+
+    function innerfun_two(){
+        console.log("m from innerfun_Two "+ raj);
+        
+    }
+    innerfun_one();
+}
+outers();

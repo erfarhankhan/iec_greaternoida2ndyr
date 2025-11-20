@@ -1,13 +1,17 @@
 
+let age = 16;
 
-let age = 20;
 
-if (age >= 18) {
-    console.log("You are an adult.");
-} else {
-    console.log("You are a minor.");
+if(age > 18){
+    console.log("u can vote");
+    
+}else if(age == 18){
+    console.log("u wait for the one year");
+    
+}else{
+    console.log("u cant vote");
+    
 }
-
 ////////////////////////////////////////////////////////////
 
 let day = 3;
