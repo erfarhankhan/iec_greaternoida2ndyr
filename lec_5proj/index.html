@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    
+    <div class="container">
+        <div class="element " style="">
+             <p id="hidedata" class="hide">reset</p>
+              <h1 style="margin: 30px 0px;">guess game</h1>
+              <input type="number" id="input_show" value=""> 
+              <button onclick="btnHandler()" id="btn"> clickme </button>
+              <!-- /////////////////////////////////////////////// -->
+
+              <div style="margin-top: 30px;line-height: 3rem;">
+                <h2>you'r result <span id="show_result"></span> </h2>
+                <h3>attempt <span id="leftattempt_show"></span> </h3>
+
+                <button onclick="resetHandler()" id="resettbtn" >reset</button>
+              </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

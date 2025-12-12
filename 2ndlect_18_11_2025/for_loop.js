@@ -60,30 +60,50 @@ let student = {
     email:"hfkhan",
     mbl:829936
 };
-for(let i in student){
-    if(){
-            console.log("i "+" : " + student[i]);
-    }
-   
-    
-}
-// for(let i in object){
-//     //code
-// }
-for(let i in student){
-    // console.log(i+" : "+student[i]);
-    if (i == "email" || i == "mbl") {
-        console.log(i+ " :"+ student[i]); 
-        
-        
-    }
+// console.log(student.name); //hf
+// console.log(student.age); // 22;
+
+// for(let i in student){
  
+//     if (i === "email") {
+//            console.log(i+" :" + student[i]); // email : hfkhan
+//     }  
+// }
+
+
+
+// for(let i in student){
+//     // console.log(i+" : "+student[i]);
+//     if (i == "email" || i == "mbl") {
+//         console.log(i+ " :"+ student[i]); 
+        
+        
+//     }
+ 
+// }
+
+// let studenttwo = {
+//         key :" value"
+// }
+
+// studenttwo.key= print=" value"
+
+
+let studentTwo = {
+    name:" hfkhan",
+    age : 23,
+    email:"hfkhan",
+    mbl:1234567890
 }
 
 
+// console.log(studentTwo.name);
+// console.log(studentTwo.age);
 
-
-
-
-
+// for(let i in studentTwo){
+   
+//     if(i === "mbl" ){
+//          console.log(i+" : "+ studentTwo[i]);
+//     }
+// }
 

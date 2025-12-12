@@ -52,7 +52,7 @@ let sum = function (a, b) {
     return a + b;
 };
 
-// console.log(sum(4, 6));
+console.log(sum(4, 6));
 
 // ⭐ 5. Arrow Function (ES6)
 
@@ -79,8 +79,6 @@ setTimeout(function(){
 console.log("hello 79");
 console.log("hello 80 ");
 console.log("hello 81");
-
-
 
 
 

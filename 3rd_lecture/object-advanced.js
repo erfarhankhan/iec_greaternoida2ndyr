@@ -1,6 +1,6 @@
 //https://github.com/erfarhankhan/iec_greaternoida2ndyr
 
-
+ 
 // 1. Object Destructuring
 
 // Destructuring lets you extract properties from an object into variables easily.

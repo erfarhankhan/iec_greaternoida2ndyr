@@ -1,23 +1,24 @@
- <!DOCTYPE html>
-<html>
-  <body>
-    <div id="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+ <body>
       <button id="addBtn">Add Item</button>
-      <ul id="itemList"></ul>
-    </div>
-
+      <ul id="itemList"> </ul>
     <script>
       const addBtn = document.getElementById("addBtn");
       const itemList = document.getElementById("itemList");
-
       // Add event listener on button
-      addBtn.addEventListener("click", () => {
+      addBtn.addEventListener("click", function(){
         const li = document.createElement("li");
-        li.textContent = "New item " + (itemList.children.length + 1);
-        // Add a remove-button to li
+        // li.textContent = "New " + (itemList.children.length + 1);
+        li.textContent = "New li" ;
+        // Add a create remove-button to  by using js method li 
         const removeBtn = document.createElement("button");
-        removeBtn.textContent = "Remove";
-        
+        removeBtn.textContent = "remove btn";
         // Event delegation: add event listener to removeBtn
         removeBtn.addEventListener("click", (e) => {
           // Remove the li when remove-button is clicked
@@ -32,69 +33,10 @@
     </script>
   </body>
 </html> 
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////
-  -->
+
+
 
 <!-- 
-  <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Simple Dynamic List</title>
-    <style>
-      body { font-family: Arial, sans-serif; padding: 20px; }
-      ul { margin-top: 20px; }
-      li { margin-bottom: 8px; }
-      button { margin-left: 10px; }
-    </style>
-  </head>
-  <body>
-    <h2>My List</h2>
-    <input type="text" id="itemInput" placeholder="Enter item" />
-    <button id="addBtn">Add</button>
-
-    <ul id="itemList"></ul>
-
-    <script>
-      const addBtn = document.getElementById("addBtn");
-      const itemInput = document.getElementById("itemInput");
-      const itemList = document.getElementById("itemList");
-
-      addBtn.addEventListener("click", () => {
-        const text = itemInput.value.trim();
-        if (text === "") {
-          alert("Please enter something!");
-          return;
-        }
-
-        // Create a new list item and remove button
-        const li = document.createElement("li");
-        li.textContent = text;
-
-        const removeBtn = document.createElement("button");
-        removeBtn.textContent = "Remove";
-
-        // When remove button clicked, remove this li
-        removeBtn.addEventListener("click", () => {
-          itemList.removeChild(li);
-        });
-
-        li.appendChild(removeBtn);
-        itemList.appendChild(li);
-
-        // Clear the input
-        itemInput.value = "";
-        itemInput.focus();
-      });
-    </script>
-  </body>
-</html> -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-<!---
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -102,18 +44,6 @@
   <title>Document</title>
 </head>
 <body>
-   <h1 id="heading_one">hi m heading</h1>
-  <button onclick="fun()">clickme</button>
-
-  <script>
-    let heading_one = document.getElementById("heading_one");
-    
-    function fun(){
-      heading_one.innerHTML="change heading"
-    }
-  </script> 
-
-
   <h1 id="heading_one"> heading  </h1>
   <button onclick="funcbtn()">click me</button>
 
@@ -121,10 +51,8 @@
     let heading_one =document.getElementById("heading_one")
       function funcbtn(){
          heading_one.innerHTML="change heading"
-      }
-      
+      }   
   </script>
 
 </body>
-</html> 
---->
+</html>  -->
